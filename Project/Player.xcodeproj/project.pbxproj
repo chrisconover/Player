@@ -11,13 +11,15 @@
 		065A0FA51A25C8E2005BA7BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065A0FA41A25C8E2005BA7BC /* ViewController.swift */; };
 		065A0FAA1A25C8E2005BA7BC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 065A0FA91A25C8E2005BA7BC /* Images.xcassets */; };
 		065A0FAD1A25C8E2005BA7BC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 065A0FAB1A25C8E2005BA7BC /* LaunchScreen.xib */; };
-		065A0FC61A25C94B005BA7BC /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065A0FC51A25C94B005BA7BC /* Player.swift */; };
+		5839C3C51BBE4DF00009FF82 /* PlayerFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 5839C3C41BBE4DF00009FF82 /* PlayerFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5839C3CA1BBE4E210009FF82 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065A0FC51A25C94B005BA7BC /* Player.swift */; settings = {ASSET_TAGS = (); }; };
+		5839C3CB1BBE4E220009FF82 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065A0FC51A25C94B005BA7BC /* Player.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		065677291A26C59B0038C208 /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = SOURCE_ROOT; };
 		0656772A1A26C59B0038C208 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = SOURCE_ROOT; };
-		065A0F9D1A25C8E2005BA7BC /* Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Player.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		065A0F9D1A25C8E2005BA7BC /* PlayerExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayerExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		065A0FA11A25C8E2005BA7BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		065A0FA21A25C8E2005BA7BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		065A0FA41A25C8E2005BA7BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,10 +27,20 @@
 		065A0FAC1A25C8E2005BA7BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		065A0FC51A25C94B005BA7BC /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Player.swift; path = ../Source/Player.swift; sourceTree = "<group>"; };
 		06C6A5891A89E952009DC6EA /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = SOURCE_ROOT; };
+		5839C3C21BBE4DF00009FF82 /* Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Player.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5839C3C41BBE4DF00009FF82 /* PlayerFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayerFramework.h; sourceTree = "<group>"; };
+		5839C3C61BBE4DF00009FF82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		065A0F9A1A25C8E2005BA7BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5839C3BE1BBE4DF00009FF82 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +55,7 @@
 			children = (
 				065A0F9F1A25C8E2005BA7BC /* App */,
 				065A0FC21A25C917005BA7BC /* Player */,
+				5839C3C31BBE4DF00009FF82 /* PlayerFramework */,
 				065A0F9E1A25C8E2005BA7BC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,7 +63,8 @@
 		065A0F9E1A25C8E2005BA7BC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				065A0F9D1A25C8E2005BA7BC /* Player.app */,
+				065A0F9D1A25C8E2005BA7BC /* PlayerExampleApp.app */,
+				5839C3C21BBE4DF00009FF82 /* Player.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,12 +101,32 @@
 			name = Player;
 			sourceTree = "<group>";
 		};
+		5839C3C31BBE4DF00009FF82 /* PlayerFramework */ = {
+			isa = PBXGroup;
+			children = (
+				5839C3C41BBE4DF00009FF82 /* PlayerFramework.h */,
+				5839C3C61BBE4DF00009FF82 /* Info.plist */,
+			);
+			path = PlayerFramework;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		5839C3BF1BBE4DF00009FF82 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5839C3C51BBE4DF00009FF82 /* PlayerFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		065A0F9C1A25C8E2005BA7BC /* Player */ = {
+		065A0F9C1A25C8E2005BA7BC /* PlayerExampleApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 065A0FBC1A25C8E2005BA7BC /* Build configuration list for PBXNativeTarget "Player" */;
+			buildConfigurationList = 065A0FBC1A25C8E2005BA7BC /* Build configuration list for PBXNativeTarget "PlayerExampleApp" */;
 			buildPhases = (
 				065A0F991A25C8E2005BA7BC /* Sources */,
 				065A0F9A1A25C8E2005BA7BC /* Frameworks */,
@@ -102,10 +136,28 @@
 			);
 			dependencies = (
 			);
-			name = Player;
+			name = PlayerExampleApp;
 			productName = Player;
-			productReference = 065A0F9D1A25C8E2005BA7BC /* Player.app */;
+			productReference = 065A0F9D1A25C8E2005BA7BC /* PlayerExampleApp.app */;
 			productType = "com.apple.product-type.application";
+		};
+		5839C3C11BBE4DF00009FF82 /* Player */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5839C3C91BBE4DF00009FF82 /* Build configuration list for PBXNativeTarget "Player" */;
+			buildPhases = (
+				5839C3BD1BBE4DF00009FF82 /* Sources */,
+				5839C3BE1BBE4DF00009FF82 /* Frameworks */,
+				5839C3BF1BBE4DF00009FF82 /* Headers */,
+				5839C3C01BBE4DF00009FF82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Player;
+			productName = PlayerFramework;
+			productReference = 5839C3C21BBE4DF00009FF82 /* Player.app */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -120,6 +172,9 @@
 				TargetAttributes = {
 					065A0F9C1A25C8E2005BA7BC = {
 						CreatedOnToolsVersion = 6.1;
+					};
+					5839C3C11BBE4DF00009FF82 = {
+						CreatedOnToolsVersion = 7.0.1;
 					};
 				};
 			};
@@ -136,7 +191,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				065A0F9C1A25C8E2005BA7BC /* Player */,
+				065A0F9C1A25C8E2005BA7BC /* PlayerExampleApp */,
+				5839C3C11BBE4DF00009FF82 /* Player */,
 			);
 		};
 /* End PBXProject section */
@@ -151,6 +207,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5839C3C01BBE4DF00009FF82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -159,8 +222,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				065A0FA51A25C8E2005BA7BC /* ViewController.swift in Sources */,
-				065A0FC61A25C94B005BA7BC /* Player.swift in Sources */,
+				5839C3CB1BBE4E220009FF82 /* Player.swift in Sources */,
 				065A0FA31A25C8E2005BA7BC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5839C3BD1BBE4DF00009FF82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5839C3CA1BBE4E210009FF82 /* Player.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,7 +305,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "$(SRCROOT)/Player/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.patrickpiemonte.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.patrickpiemonte.PlayerExampleApp;
 			};
 			name = Debug;
 		};
@@ -244,7 +315,81 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "$(SRCROOT)/Player/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.patrickpiemonte.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.patrickpiemonte.PlayerExampleApp;
+			};
+			name = Release;
+		};
+		5839C3C71BBE4DF00009FF82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = PlayerFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.patrickpiemonte.Player;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5839C3C81BBE4DF00009FF82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = PlayerFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.patrickpiemonte.Player;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -260,7 +405,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		065A0FBC1A25C8E2005BA7BC /* Build configuration list for PBXNativeTarget "Player" */ = {
+		065A0FBC1A25C8E2005BA7BC /* Build configuration list for PBXNativeTarget "PlayerExampleApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				065A0FBD1A25C8E2005BA7BC /* Debug */,
@@ -268,6 +413,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		5839C3C91BBE4DF00009FF82 /* Build configuration list for PBXNativeTarget "Player" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5839C3C71BBE4DF00009FF82 /* Debug */,
+				5839C3C81BBE4DF00009FF82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
